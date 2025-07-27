@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How It Works - Cancer Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <div class="overlay">
+        <div class="info-container">
+            <h1>How Cancer Detection Works</h1>
+            <p>This system uses Machine Learning to detect cancerous cells from medical images. Here's how it works:</p>
+            <ul>
+                <li><i class="fas fa-upload"></i><strong> Step 1:</strong> Upload a medical image (e.g., MRI, X-Ray).</li>
+                <li><i class="fas fa-microscope"></i><strong> Step 2:</strong> Our models classify the image and predict the type of cancer.</li>
+                <li><i class="fas fa-notes-medical"></i><strong> Step 3:</strong> You get results instantly, helping you make informed decisions.</li>
+            </ul>
+            <p>To get started, simply click the button below to upload your medical image!</p>
+            <a href="/Upload" class="get-started-btn">
+                <i class="fas fa-arrow-right"></i> Get Started
+            </a>
+        </div>
+    </div>
+</body>
+</html>

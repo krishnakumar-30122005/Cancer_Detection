@@ -1,0 +1,343 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f8fc;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to bottom right, #6a82fb, #fc5c7d);
+    border-radius: 12px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    max-width: 600px;
+    text-align: center;
+    background-color: white;
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.container:hover {
+    transform: scale(1.05);
+}
+
+h1 {
+    color: #1a237e;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    letter-spacing: 1px;
+}
+
+p {
+    color: #444;
+    margin-bottom: 30px;
+    font-size: 1.2em;
+}
+
+.upload-box {
+    border: 2px dashed #1a237e;
+    padding: 40px 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.9);
+    transition: background-color 0.3s ease;
+}
+
+.upload-box:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.upload-label {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #1a237e;
+}
+
+input[type="file"] {
+    display: block;
+    margin: 0 auto;
+    padding: 15px;
+    font-size: 1em;
+    background-color: #1a237e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="file"]:hover {
+    background-color: #3949ab;
+}
+
+button {
+    background-color: #1a237e;
+    color: white;
+    padding: 12px 30px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #3949ab;
+}
+/* For the How It Works page */
+.info-container {
+    max-width: 700px;
+    background-color: white;
+    padding: 40px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.info-container:hover {
+    transform: scale(1.05);
+}
+
+h1 {
+    color: #1a237e;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+p, ul {
+    color: #444;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin-bottom: 15px;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.get-started-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #1a237e;
+    color: white;
+    font-size: 1.5em;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+.get-started-btn:hover {
+    background-color: #3949ab;
+}
+/* Add this to your styles.css */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.container {
+    animation: fadeIn 1.5s ease-out;
+}
+/* Add this to your styles.css */
+ul li {
+    opacity: 0;
+    animation: fadeIn 1.5s ease-out forwards;
+}
+
+ul li:nth-child(1) {
+    animation-delay: 0.5s;
+}
+
+ul li:nth-child(2) {
+    animation-delay: 1s;
+}
+
+ul li:nth-child(3) {
+    animation-delay: 1.5s;
+}
+/* Add this to your styles.css */
+.get-started-btn {
+    position: relative;
+    overflow: hidden;
+    background-color: #1a237e;
+    color: white;
+    padding: 10px 25px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.get-started-btn:hover {
+    transform: scale(1.05);
+    background-color: #3949ab;
+}
+
+.get-started-btn:active {
+    transform: scale(1);
+}
+/* Add this to your styles.css */
+
+/* styles.css for How It Works page */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #e3f2fd, #fce4ec);
+}
+
+.overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.info-container {
+    background-color: white;
+    padding: 40px;
+    max-width: 700px;
+    border-radius: 12px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.15);
+    text-align: center;
+}
+
+.info-container h1 {
+    color: #1a237e;
+    margin-bottom: 20px;
+}
+
+.info-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    text-align: left;
+}
+
+.info-container li {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #333;
+}
+
+.info-container li i {
+    margin-right: 10px;
+    color: #1a237e;
+    font-size: 20px;
+}
+
+.get-started-btn {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #1a237e;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.get-started-btn:hover {
+    background-color: #3949ab;
+}
+.get-started-btn i {
+    margin-right: 8px;
+    transition: transform 0.3s ease;
+}
+
+.get-started-btn:hover i {
+    transform: translateX(5px);
+}
+.result-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 12px;
+    max-width: 600px;
+    text-align: center;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
+    animation: fadeIn 1.5s ease-out;
+}
+
+.result-card {
+    background-color: #f4f8fc;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+}
+
+.result-card p {
+    font-size: 1.2em;
+    color: #333;
+    margin: 15px 0;
+}
+
+.result-card i {
+    color: #1a237e;
+    margin-right: 10px;
+}
+
+.download-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #1a237e;
+    color: white;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    bottom: 13px;  /* Adjust this value to move it further up or down */
+}
+
+.download-btn:hover {
+    background-color: #3949ab;
+}
+
+.download-btn i {
+    margin-right: 8px;
+    transition: transform 0.3s ease;
+}
+
+.download-btn:hover i {
+    transform: translateX(5px);
+}

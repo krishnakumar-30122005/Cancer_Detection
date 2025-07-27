@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <div class="overlay">
+        <div class="result-container">
+            <h1><i class="fas fa-stethoscope"></i> Prediction Result</h1>
+            <div class="result-card">
+                <p><i class="fas fa-dna"></i> Detected Cancer Type: <strong>{{ cancer_type }}</strong></p>
+                <p><i class="fas fa-notes-medical"></i> Diagnosis: <strong>{{ result }}</strong></p>
+            </div>
+            <a href="/" class="get-started-btn">
+                <i class="fas fa-arrow-left"></i> Back to Upload
+            </a>
+            <a href="{{ url_for('download_report', cancer_type=cancer_type, result=result) }}" class="download-btn" target="_blank">
+                <i class="fas fa-file-download"></i> Download Report (PDF)
+            </a>
+        </div>
+    </div>
+</body>
+</html>
