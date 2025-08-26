@@ -1,11 +1,4 @@
 
-import tensorflow as tf
-from tensorflow.keras.models import load_model
-import numpy as np
-import cv2
-import os
-
-# Load models
 classifier_model = load_model(r"D:/cancer detection/cancerDetection/models/classifier_model.h5")
 brain_model = load_model(r"D:/cancer detection/cancerDetection/models/train_cnn_brain.h5")
 skin_model = load_model(r"D:/cancer detection/cancerDetection/models/train_cnn_skin.h5")
