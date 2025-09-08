@@ -1,4 +1,9 @@
 
+# Dataset Path
+train_dir = r"D:\cancer detection\cancerDetection\dataset\processed\breast_cancer\Testing"
+val_dir = r"D:\cancer detection\cancerDetection\dataset\processed\breast_cancer\Testing"
+
+
 
 # Image Preprocessing
 datagen_train = ImageDataGenerator(rescale=1./255)
